@@ -72,10 +72,6 @@ TARGET_RECOVERY_INITRC := device/samsung/lt02/recovery/root/init.rc
 RECOVERY_GRAPHICS_FORCE_SINGLE_BUFFER := true
 RECOVERY_GRAPHICS_USE_LINELENGTH      := true
 
-# TODO: Fix Marvell I2C for these to be disabled
-TW_NO_SCREEN_TIMEOUT    := true
-TW_NO_SCREEN_BLANK      := true
-
 TW_NO_REBOOT_BOOTLOADER := true
 TW_HAS_DOWNLOAD_MODE    := true
 

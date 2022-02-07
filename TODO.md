@@ -1,1 +1,1 @@
-- [ ] Fix Marvell I2C *(healthd-related issues)*
+- [ ] Fix temperature *(unsupported by the kernel at the moment)*
