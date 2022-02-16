@@ -16,15 +16,12 @@ BOARD_VENDOR                 := samsung
 TARGET_GLOBAL_CFLAGS   += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 TARGET_GLOBAL_CPPFLAGS += -mtune=cortex-a9 -mfpu=neon -mfloat-abi=softfp
 
-
 # U-boot
 TARGET_NO_BOOTLOADER := true
 TARGET_NO_RADIOIMAGE := true
 
-
 # Kernel
 TARGET_PREBUILT_KERNEL := device/samsung/lt02/prebuilt/zImage
-
 BOARD_KERNEL_CMDLINE     := androidboot.selinux=permissive androidboot.hardware=pxa988
 BOARD_KERNEL_BASE        := 0x10000000
 BOARD_KERNEL_OFFSET      := 0x00008000
@@ -35,7 +32,6 @@ BOARD_MKBOOTIMG_ARGS     := --kernel_offset 0x00008000 --ramdisk_offset 0x010000
 BOARD_CUSTOM_BOOTIMG_MK  := device/samsung/lt02/mkbootimg.mk
 BOARD_KERNEL_PAGESIZE    := 2048
 
-
 # Partitions
 BOARD_BOOTIMAGE_PARTITION_SIZE     := 12582912
 BOARD_RECOVERYIMAGE_PARTITION_SIZE := 12582912
@@ -45,19 +41,16 @@ BOARD_FLASH_BLOCK_SIZE             := 4096
 TARGET_USERIMAGES_USE_EXT4         := true
 BOARD_HAS_NO_MISC_PARTITION        := true
 
-
 # Update OTA
 BLOCK_BASED_OTA := false
 
-
 # Assert
 TARGET_OTA_ASSERT_DEVICE   := lt02,lt02wifi,lt023g
-BOARD_HAS_NO_SELECT_BUTTON := true
-
 
 # TWRP
 BOARD_USES_MMCUTILS        := true
 BOARD_HAS_LARGE_FILESYSTEM := true
+BOARD_HAS_NO_SELECT_BUTTON := true
 BOARD_RECOVERY_SWIPE       := true
 RECOVERY_FSTAB_VERSION     := 2
 TARGET_RECOVERY_FSTAB      := device/samsung/lt02/recovery.fstab
@@ -84,7 +77,10 @@ SP1_NAME                        := "efs"
 SP1_BACKUP_METHOD               := files
 
 TW_EXCLUDE_TWRPAPP           := true
+<<<<<<< HEAD   (490de2 Remove some twrp variables)
 TW_USE_TOOLBOX               := true
+=======
+>>>>>>> CHANGE (1ade80 Cleanup BoardConfig.mk)
 TW_INCLUDE_FUSE_EXFAT        := true
 TW_INCLUDE_CRYPTO            := false
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
@@ -93,19 +89,6 @@ TW_NO_HAPTICS                := true
 TW_EXTRA_LANGUAGES           := false
 
 RECOVERY_SDCARD_ON_DATA := false
-
-
-# MRVL hardware + Graphics
-BOARD_USES_MRVL_HARDWARE          := true
-MRVL_ION                          := true
-MRVL_INTERFACE_ANIMATION          := true
-TARGET_FORCE_CPU_UPLOAD           := true
-USE_OPENGL_RENDERER               := true
-BOARD_USE_BGRA_8888               := true
-BOARD_HAVE_PIXEL_FORMAT_INFO      := true
-BOARD_USE_VIVANTE_GRALLOC         := true
-MRVL_LAUNCH_DMS_IN_SURFACEFLINGER := true
-
 
 # Resolution
 TARGET_SCREEN_HEIGHT := 1024
