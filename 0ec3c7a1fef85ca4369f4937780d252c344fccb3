@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "6218b2b4_97574b31",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 816
+      },
+      "writtenOn": "2022-02-20T15:32:11Z",
+      "side": 1,
+      "message": "Merge conflict earlier, readded marvell variables",
+      "revId": "0ec3c7a1fef85ca4369f4937780d252c344fccb3",
+      "serverId": "9c1c7d72-6534-4d44-b0ea-39f63e804833"
+    }
+  ]
+}
