@@ -77,10 +77,6 @@ SP1_NAME                        := "efs"
 SP1_BACKUP_METHOD               := files
 
 TW_EXCLUDE_TWRPAPP           := true
-<<<<<<< HEAD   (490de2 Remove some twrp variables)
-TW_USE_TOOLBOX               := true
-=======
->>>>>>> CHANGE (1ade80 Cleanup BoardConfig.mk)
 TW_INCLUDE_FUSE_EXFAT        := true
 TW_INCLUDE_CRYPTO            := false
 TW_EXCLUDE_ENCRYPTED_BACKUPS := true
@@ -89,6 +85,17 @@ TW_NO_HAPTICS                := true
 TW_EXTRA_LANGUAGES           := false
 
 RECOVERY_SDCARD_ON_DATA := false
+
+# MRVL hardware + Graphics
+BOARD_USES_MRVL_HARDWARE          := true
+MRVL_ION                          := true
+MRVL_INTERFACE_ANIMATION          := true
+TARGET_FORCE_CPU_UPLOAD           := true
+USE_OPENGL_RENDERER               := true
+BOARD_USE_BGRA_8888               := true
+BOARD_HAVE_PIXEL_FORMAT_INFO      := true
+BOARD_USE_VIVANTE_GRALLOC         := true
+MRVL_LAUNCH_DMS_IN_SURFACEFLINGER := true
 
 # Resolution
 TARGET_SCREEN_HEIGHT := 1024
